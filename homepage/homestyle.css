@@ -1,0 +1,275 @@
+.span9 {width: 100%;}
+
+#side-bar {
+    width: 100%;
+padding-left: 0px;}
+
+.comments {display: none;}
+
+.post h1 {
+display: none;
+}
+
+/* default page styling */
+
+/* category header styling */
+
+.closeable {
+  overflow: hidden;
+  transition: height 0.7s ease;
+margin: 0 0 5px 15px;  
+}
+
+.closeable.closeit {
+  height: 30px; 
+}
+
+.cattext {
+margin: 13px 0 0 0;
+font-family: 'Open Sans';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.patch1 {
+    width: auto;
+    position: relative;
+    font-weight: 300;
+margin: 0 0 15px 0;
+
+}
+.closeable h3 {
+color: #ffce00;
+    position: relative;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: auto;
+}
+
+.catlink {
+float:right;
+margin: 0 0 0 0;
+background: #ffce00;
+font-size: 15px;
+font-weight: 500;
+}
+
+a.catlink {margin: 0 20px 0px 20px; color:#ffffff}
+a.catlink:hover {color:#ffffff}
+a.catlink:visited {color:#ffffff}
+
+/* category header styling ends */
+
+/* card styling */
+
+.grid-section {
+  height: auto;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .grid-section {
+    width: auto;
+text-align: center;
+  }
+}
+@media screen and (max-width: 853px) {
+  .grid-section {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .grid-section {
+    width: 100%;
+  }
+}
+/* Blog Card */
+.blog-card {
+  width: 30%;
+  height: auto;
+  background: #fff;
+  display: inline-block;
+  margin: 4px 2px;
+  vertical-align: top;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+.blog-card:hover {
+  -webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+}
+.blog-card__image {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+.blog-card__image img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1275px) {
+  .blog-card {
+    width: calc(95% / 4);
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-card {
+    width: calc(96% / 3);
+  }
+}
+@media screen and (max-width: 533px) {
+  .blog-card {
+    width: calc(96% / 2);
+  }
+}
+@media screen and (max-width: 360px) {
+  .blog-card {
+    width: 98%;
+  }
+}
+.blog-card__title {
+width: auto;
+    /* height: 40px; */
+    font-family: 'open sans';
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 15px 10px 15px;
+    color: grey;
+ font-weight: 800;
+line-height: 1.3;
+    letter-spacing: 0.6px;
+}
+
+.blog-card__title a{
+text-decoration:none;
+
+}
+.blog-card__title:visited {
+color:#grey;
+
+}
+
+
+
+.blog-card hr {
+width: 75%;
+    border-top: 1px solid #ffce00;
+    margin-top: 10px;
+    box-shadow: none;
+}
+.blog-card__details {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-top: 12px;
+  bottom: 0;
+  padding: 0 5px;
+  display: block;
+}
+.blog-card__details--time, .blog-card__details--view, .blog-card__details--like {
+  float: left;
+  font-size: 0.75em;
+  margin-top: 11px;
+  color: #C0C0C0;
+}
+.blog-card__details--view {
+  float: right;
+}
+.blog-card__details--like {
+  float: right;
+  margin-left: 9px;
+}
+.blog-card__details--like i:hover {
+  color: #1382C1;
+}
+
+.blog-card__description {
+margin: 15px 15px 25px 15px;
+margin: 15px 15px 25px 15px;
+    font-size: 13px;
+    letter-spacing: 0.4;
+    line-height: 1.7;
+    color: grey;
+    font-family: 'open sans';
+letter-spacing: 0.4px;
+}
+
+
+
+/* slider style starts here */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+opacity: 1;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 0 0 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 0 0 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/* card styling ends */
